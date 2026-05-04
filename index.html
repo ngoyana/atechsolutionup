@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A-Tech Solutions — Digital Excellence | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">A-Tech Solutions</div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#stats">About</a></li>
+    </ul>
+    <button class="nav-cta" onclick="openModal()">Get a Quote</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Premium Digital Agency · Est. 2023</div>
+      <h1 class="hero-h1">We Build<br><em>Digital</em><br>Futures.</h1>
+      <p class="hero-sub">Mobile apps, graphic design, and web experiences engineered for the world's most ambitious brands.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="openModal()">Start a Project</button>
+        <button class="btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Our Work ↓</button>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track" id="marquee">
+      <div class="marquee-item"><span class="dot"></span>Mobile Development</div>
+      <div class="marquee-item"><span class="dot"></span>Brand Identity</div>
+      <div class="marquee-item"><span class="dot"></span>Website Development</div>
+      <div class="marquee-item"><span class="dot"></span>UI / UX Design</div>
+      <div class="marquee-item"><span class="dot"></span>App Architecture</div>
+      <div class="marquee-item"><span class="dot"></span>Motion Design</div>
+      <div class="marquee-item"><span class="dot"></span>Mobile Development</div>
+      <div class="marquee-item"><span class="dot"></span>Brand Identity</div>
+      <div class="marquee-item"><span class="dot"></span>Website Development</div>
+      <div class="marquee-item"><span class="dot"></span>UI / UX Design</div>
+      <div class="marquee-item"><span class="dot"></span>App Architecture</div>
+      <div class="marquee-item"><span class="dot"></span>Motion Design</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-h2">Three disciplines,<br>one vision.</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-num">01</div>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+              <rect x="7" y="2" width="10" height="20" rx="2.5" />
+              <circle cx="12" cy="18.5" r=".8" fill="var(--gold)" />
+            </svg>
+          </div>
+          <h3>Mobile Development</h3>
+          <p>iOS and Android applications built for performance and scale — from concept architecture to App Store launch. Native code, seamless UX.</p>
+          <div class="service-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="var(--gold)" stroke-width="1.5">
+              <path d="M2 12L12 2M12 2H5M12 2v7" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-num">02</div>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+              <circle cx="12" cy="12" r="2.5" />
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+              <path d="M5.6 5.6l2 2M16.4 16.4l2 2M5.6 18.4l2-2M16.4 7.6l2-2" />
+            </svg>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Brand identities, visual systems, and digital assets that communicate with authority. Design that earns attention and commands respect.</p>
+          <div class="service-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="var(--gold)" stroke-width="1.5">
+              <path d="M2 12L12 2M12 2H5M12 2v7" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-num">03</div>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M2 9h20" />
+              <circle cx="5.5" cy="6.5" r=".8" fill="var(--gold)" />
+              <circle cx="8.5" cy="6.5" r=".8" fill="var(--gold)" />
+            </svg>
+          </div>
+          <h3>Website Development</h3>
+          <p>High-performance websites and web platforms — from marketing sites to complex web apps. Built fast, designed to convert, optimised to rank.</p>
+          <div class="service-arrow">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="var(--gold)" stroke-width="1.5">
+              <path d="M2 12L12 2M12 2H5M12 2v7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="20">0</div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-num" data-target="17">0</div>
+        <div class="stat-label">Client Satisfaction %</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-num" data-target="2">0</div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-num" data-target="10">0</div>
+        <div class="stat-label">Active Clients</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="section-inner">
+      <div class="reveal">
+        <div class="section-label">How We Work</div>
+        <h2 class="section-h2">A process built<br>for results.</h2>
+      </div>
+      <div class="process-list">
+        <div class="process-item reveal">
+          <div class="process-step-num">01</div>
+          <div class="process-step-content">
+            <h3>Discovery & Strategy</h3>
+            <p>We immerse ourselves in your business, audience, and goals. Every project begins with deep listening and strategic thinking before a single pixel is placed.</p>
+          </div>
+        </div>
+        <div class="process-item reveal reveal-delay-1">
+          <div class="process-step-num">02</div>
+          <div class="process-step-content">
+            <h3>Design & Prototyping</h3>
+            <p>High-fidelity designs, motion concepts, and interactive prototypes. You see and feel the product before development begins, reducing risk and refining vision.</p>
+          </div>
+        </div>
+        <div class="process-item reveal reveal-delay-2">
+          <div class="process-step-num">03</div>
+          <div class="process-step-content">
+            <h3>Development & Engineering</h3>
+            <p>Clean, maintainable code. Rigorous QA. Performance-first engineering that scales. We build to last, not just to launch.</p>
+          </div>
+        </div>
+        <div class="process-item reveal reveal-delay-3">
+          <div class="process-step-num">04</div>
+          <div class="process-step-content">
+            <h3>Launch & Growth</h3>
+            <p>Deployment, monitoring, and continuous optimisation. We stay invested in your success long after go-live, iterating and improving based on real data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section id="cta-strip">
+    <div class="cta-inner">
+      <div class="cta-text reveal">
+        <h2>Ready to build something<br>extraordinary?</h2>
+        <p>Let's talk about your vision. No commitments, just clarity.</p>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <button class="btn-primary" onclick="openModal()">Get a Free Quote →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo">A-Tech Solutions</span>
+          <p>Premium digital solutions for forward-thinking businesses. Mobile, design, and web — all under one roof.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Mobile Development</a></li>
+            <li><a href="#services">Graphic Design</a></li>
+            <li><a href="#services">Website Development</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:anelengoyana@gmail.com">anelengoyana@gmail.com</a></li>
+            <li><a href="#">+27 71 928 2220</a></li>
+            <li><a href="#">Durban, South Africa</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 A-Tech Solutions. All rights reserved.</p>
+        <p>Crafted with precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QUOTE MODAL -->
+  <div class="modal-overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
+    <div class="modal" id="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modal-form-content">
+        <h3>Start a Project</h3>
+        <p class="sub">Tell us about your vision. We'll respond within 24 hours.</p>
+        <div class="service-chips" style="margin-bottom:1.5rem;">
+          <div class="chip active" data-service="Mobile Dev" onclick="toggleChip(this)">Mobile Dev</div>
+          <div class="chip" data-service="Graphic Design" onclick="toggleChip(this)">Graphic Design</div>
+          <div class="chip" data-service="Website Dev" onclick="toggleChip(this)">Website Dev</div>
+          <div class="chip" data-service="Full Package" onclick="toggleChip(this)">Full Package</div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label>First Name</label>
+            <input type="text" id="m-fname" placeholder="John">
+          </div>
+          <div class="form-field">
+            <label>Last Name</label>
+            <input type="text" id="m-lname" placeholder="Smith">
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" id="m-email" placeholder="john@company.com">
+          </div>
+          <div class="form-field">
+            <label>Phone</label>
+            <input type="tel" id="m-phone" placeholder="+27 00 000 0000">
+          </div>
+          <div class="form-field">
+            <label>Company</label>
+            <input type="text" id="m-company" placeholder="Your company">
+          </div>
+          <div class="form-field">
+            <label>Budget</label>
+            <select id="m-budget">
+              <option value="">Select range</option>
+              <option>Under R10,000</option>
+              <option>R10,000 – R50,000</option>
+              <option>R50,000 – R150,000</option>
+              <option>R150,000+</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label>Project Brief</label>
+            <textarea id="m-message" placeholder="Tell us about your project, goals, and timeline…"></textarea>
+          </div>
+        </div>
+        <div id="modal-error" style="display:none;font-size:.8rem;color:#e07070;margin-top:.5rem;"></div>
+        <div class="modal-loader" id="modal-loader"></div>
+        <button class="modal-submit" id="modal-submit-btn" onclick="submitModal()">Submit Request</button>
+      </div>
+      <div class="modal-success" id="modal-success">
+        <div class="checkmark">✓</div>
+        <h4>Request Received</h4>
+        <p>Thank you! Our team will review your project and reach out within 1–2 business days with a tailored proposal.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
